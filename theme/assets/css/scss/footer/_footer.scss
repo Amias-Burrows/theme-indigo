@@ -1,0 +1,42 @@
+footer {
+	.socials {
+		list-style-type: none;
+		display: grid;
+		grid-template-columns: 50% 50%;
+		width: 90vw;
+		li {
+			a {
+				img {
+					width: 30vw;
+				}
+			}
+		}
+	}
+	.copyright {
+		background-color: $red;
+		width: 100vw;
+		height: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@media (min-width: 768px) {
+	footer {
+		.socials {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-around;
+			width: 60vw;
+			li {
+				a {
+					img {
+						width: 10vw;
+					}
+				}
+			}
+		}
+	}
+}

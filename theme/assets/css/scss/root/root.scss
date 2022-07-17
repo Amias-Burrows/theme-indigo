@@ -1,0 +1,16 @@
+@import '../colour';
+@import '../fonts';
+
+html {
+	overflow-x: hidden;
+	body {
+		overflow-x: hidden;
+		background-color: $blue-1;
+
+		@import '../header/header';
+
+		@import '../main/main';
+
+		@import '../footer/footer';
+	}
+}
