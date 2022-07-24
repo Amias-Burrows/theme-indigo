@@ -1,14 +1,57 @@
 main {
 	width: 100vw;
+	padding: 10vh 0;
 	.newsletter {
 		width: 90%;
+		margin: auto;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-around;
+		text-align: center;
 		.contact {
-			input:nthchild[1] {
-				background-color: yellow;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			label {
+				opacity: 0;
+				display: none;
+			}
+			input {
+				outline: none;
+				background-color: $light;
+				color: $blue-1;
+				padding: 10px;
+				border-color: $blue-1;
+				border-width: 1px;
+				transition: all 0.1s ease-in-out;
+				text-align: center;
+				&[name=name] {
+					border-radius: 20px 20px 0 0;
+					border-style: none none solid none;
+					&:focus ~ label[for=name], &:active ~ label[for=name] {
+						opacity: 1;
+					}
+				}
+				&[name=email] {
+					border-radius: 0 0 20px 20px;
+					border-style: solid none none none;
+				}
+				&[type=submit] {
+					background-color: $red;
+					color: $yellow;
+					border-radius: 0 0 20px 20px;
+					border-style: solid none none none;
+				}
+				&:hover {
+					border-width: 2px;
+					border-color: $blue-3;
+				}
+				&:focus, &:active {
+					border-width: 5px;
+					border-color: $yellow;
+				}
 			}
 		}
 	}

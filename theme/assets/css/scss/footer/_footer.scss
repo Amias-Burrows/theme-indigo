@@ -1,39 +1,67 @@
 footer {
+	.socialtree {
+		z-index: 10;
+		position: fixed;
+		top: 10px;
+		right: 10px;
+		width: 10vw;
+		svg {
+			fill: $yellow;
+			transition: transform 0.5s ease-in-out;
+			&:hover, &:focus, &:active {
+				transform: translateX(-10px);
+			}
+		}
+	}
+
 	.socials {
 		list-style-type: none;
-		display: grid;
-		grid-template-columns: 50% 50%;
-		width: 90vw;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		width: 80vw;
+		margin: auto;
+		padding: 0 0 5vh 0;
 		li {
 			a {
-				img {
-					width: 30vw;
+				svg {
+					width: 20vw;
+					fill: $blue-3;
+					transition: transform 0.5s ease-in-out;
+					&:hover, &:focus, &:active {
+						transform: translateY(-10px);
+					}
 				}
 			}
 		}
 	}
 	.copyright {
 		background-color: $red;
+		padding: 10px;
 		width: 100vw;
 		height: auto;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		span {
+			font-size: 0.7rem;
+		}
 	}
 }
 
 @media (min-width: 768px) {
 	footer {
+		.socialtree {
+			width: 5vw;
+		}
 		.socials {
-			display: flex;
-			flex-direction: row;
-			align-items: center;
-			justify-content: space-around;
 			width: 60vw;
 			li {
 				a {
-					img {
-						width: 10vw;
+					svg {
+						width: 5vw;
 					}
 				}
 			}

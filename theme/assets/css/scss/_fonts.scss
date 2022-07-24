@@ -1,7 +1,22 @@
-* {
-	color: $light;
+@font-face {
+	font-family: indigo;
+	src: url(../fonts/Indigo_Bay.ttf);
 }
 
-h1, h2, h3, h4, h5, h6 {
+@font-face {
+	font-family: sathu;
+	src: url(../fonts/Sathu.ttf);
+}
+
+* {
+	color: $light;
+	font-family: indigo;
+}
+
+p {
+	font-family: sathu;
+}
+
+h1, h2, h3, h4, h5, h6, label {
 	color: $yellow;
 }
