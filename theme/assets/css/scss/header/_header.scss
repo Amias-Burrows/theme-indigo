@@ -13,12 +13,12 @@ header {
 	}
 	.svg-1 {
 		fill: $blue-2;
-		height: 120vh;
+		height: 140vh;
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		transform: translate(-50%, -50%);
 		z-index: 0;
+		transform: translate(-50%, -50%) rotate(90deg);
 		* {
 			width: 100%;
 			height: 100%;
@@ -26,12 +26,12 @@ header {
 	}
 	.svg-2 {
 		fill: $blue-3;
-		height: 110vh;
+		height: 120vh;
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		transform: translate(-50%, -50%);
 		z-index: 1;
+		transform: translate(-50%, -50%) rotate(270deg);
 	}
 	.content {
 		display: flex;
