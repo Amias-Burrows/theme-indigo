@@ -40,6 +40,20 @@ header {
 		justify-content: center;
 		iframe {
 			width: 80vw;
+			height: 40vh;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	header {
+		.svg-1 {
+			height: 200vh;
+			transform: translate(-50%, -50%) rotate(180deg);
+		}
+		.svg-2 {
+			height: 160vh;
+			transform: translate(-50%, -50%) rotate(-30deg);
 		}
 	}
 }
