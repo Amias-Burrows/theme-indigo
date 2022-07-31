@@ -27,9 +27,8 @@ footer {
 		padding: 0 0 5vh 0;
 		li {
 			a {
-				svg {
+				img {
 					width: 20vw;
-					fill: $background-3;
 					transition: transform 0.5s ease-in-out;
 					&:hover, &:focus, &:active {
 						transform: translateY(-10px);
