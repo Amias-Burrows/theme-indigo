@@ -27,6 +27,7 @@ footer {
 		padding: 0 0 5vh 0;
 		img {
 			width: 20vw;
+			height: auto;
 			transition: transform 0.5s ease-in-out;
 			&:hover, &:focus, &:active {
 				transform: translateY(-10px);
