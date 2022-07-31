@@ -40,7 +40,7 @@ function indigo_copy($wp_customize) {
 	$wp_customize->add_section('indigo_footer_copy_section');
 	$wp_customize->add_setting('indigo_footer_copy', array(
 		'default' => 'Copyright &copy; Indigo Bay 2022'
-	);
+	));
 	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'indigo_footer_copy', aarray(
 		'label' => 'Copyright content',
 		'section' => 'indigo_footer_copy_section',
