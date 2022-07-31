@@ -54,7 +54,7 @@ function indigo_newsletter_widget() {
 	register_sidebar(
 		array(
 			'name' => 'Newsletter Widget',
-			'class' => 'newsletter-widget',
+			'id' => 'newsletter-widget',
 			'description' => 'Add the newsletter form in this widget area to let people sign up for the newsletter',
 			'before_widget' => '<div class="newsletter">',
 			'after_widget' => '</div>'
