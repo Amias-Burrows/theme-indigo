@@ -60,7 +60,8 @@ function indigo_newsletter_widget() {
 			'description' => 'Add the newsletter form in this widget area to let people sign up for the newsletter',
 			'before_widget' => '<div class="newsletter">',
 			'after_widget' => '</div>'
-		));
+		)
+	);
 }
 
 add_action('widgets_init', 'indigo_newsletter_widget');
