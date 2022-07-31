@@ -32,7 +32,7 @@ main {
 				.name {
 					border-radius: 20px 20px 0 0;
 					border-style: none none solid none;
-					&:focus ~ label[for=name], &:active ~ label[for=name] {
+					&:focus ~ .name, &:active ~ .name {
 						opacity: 1;
 					}
 				}
@@ -40,7 +40,7 @@ main {
 					border-radius: 0 0 20px 20px;
 					border-style: solid none none none;
 				}
-				&[type=submit] {
+				.submit {
 					background-color: $accent;
 					color: $light;
 					border-radius: 0 0 20px 20px;

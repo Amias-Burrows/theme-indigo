@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 		<main>
-			<div class='this working'>
+			<div class='newsletter'>
 				<?php
 					dynamic_sidebar('newsletter-widget');
 				?>
