@@ -19,7 +19,7 @@ main {
 				opacity: 0;
 				display: none;
 			}
-			input {
+			input, button {
 				width: 100%;
 				outline: none;
 				background-color: $light;
@@ -29,24 +29,6 @@ main {
 				border-width: 1px;
 				transition: all 0.1s ease-in-out;
 				text-align: center;
-				.name {
-					border-radius: 20px 20px 0 0;
-					border-style: none none solid none;
-					&:focus ~ .name, &:active ~ .name {
-						opacity: 1;
-					}
-				}
-				.email {
-					border-radius: 0 0 20px 20px;
-					border-style: solid none none none;
-				}
-				.submit {
-					background-color: $accent;
-					color: $light;
-					border-radius: 0 0 20px 20px;
-					border-style: solid none none none;
-					width: auto;
-				}
 				&:hover {
 					border-width: 2px;
 					border-color: $background-3;
@@ -55,6 +37,24 @@ main {
 					border-width: 5px;
 					border-color: $font;
 				}
+			}
+			.name input {
+				border-radius: 20px 20px 0 0;
+				border-style: none none solid none;
+				&:focus ~ .name, &:active ~ .name {
+					opacity: 1;
+				}
+			}
+			.email input {
+				border-radius: 0 0 20px 20px;
+				border-style: solid none none none;
+			}
+			.submit {
+				background-color: $accent;
+				color: $light;
+				border-radius: 0 0 20px 20px;
+				border-style: solid none none none;
+				width: auto;
 			}
 		}
 	}
