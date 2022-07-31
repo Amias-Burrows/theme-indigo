@@ -25,15 +25,11 @@ footer {
 		width: 80vw;
 		margin: auto;
 		padding: 0 0 5vh 0;
-		li {
-			a {
-				img {
-					width: 20vw;
-					transition: transform 0.5s ease-in-out;
-					&:hover, &:focus, &:active {
-						transform: translateY(-10px);
-					}
-				}
+		img {
+			width: 20vw;
+			transition: transform 0.5s ease-in-out;
+			&:hover, &:focus, &:active {
+				transform: translateY(-10px);
 			}
 		}
 	}
@@ -58,12 +54,8 @@ footer {
 		}
 		.socials {
 			width: 60vw;
-			li {
-				a {
-					svg {
-						width: 5vw;
-					}
-				}
+			img {
+				width: 5vw;
 			}
 		}
 	}
