@@ -35,3 +35,30 @@ function indigo_iframe($wp_customize) {
 }
 
 add_action('customize_register', 'indigo_iframe');
+
+function indigo_copy($wp_customize) {
+	$wp_customize->add_section('indigo_footer_copy_section');
+	$wp_customize->add_setting('indigo_footer_copy', array(
+		'default' => 'Copyright &copy; Indigo Bay 2022'
+	);
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'indigo_footer_copy', aarray(
+		'label' => 'Copyright content',
+		'section' => 'indigo_footer_copy_section',
+		'settings'=> 'indigo_footer_copy'
+	)));
+}
+
+add_action('customize_register', 'indigo_copy');
+
+function indigo_newsletter_widget() {
+	register_sidebar(
+		array(
+			'name' => 'Newsletter Widget',
+			'class' => 'newsletter-widget',
+			'description' => 'Add the newsletter form in this widget area to let people sign up for the newsletter',
+			'before_widget' => '<div class="newsletter">',
+			'after_widget' => '</div>'
+		));
+}
+
+add_action('widgets_init', 'indigo_newsletter_widget');
