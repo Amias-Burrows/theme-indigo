@@ -56,5 +56,10 @@ header {
 			height: 160%;
 			transform: translate(-50%, -50%) rotate(-160deg);
 		}
+		.content {
+			iframe {
+				width: 30vw;
+			}
+		}
 	}
 }
