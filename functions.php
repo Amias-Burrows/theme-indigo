@@ -37,7 +37,9 @@ function indigo_iframe($wp_customize) {
 add_action('customize_register', 'indigo_iframe');
 
 function indigo_copy($wp_customize) {
-	$wp_customize->add_section('indigo_footer_copy_section');
+	$wp_customize->add_section('indigo_footer_copy_section', array(
+		'title' => __('Footer Copy')
+	));
 	$wp_customize->add_setting('indigo_footer_copy', array(
 		'default' => 'Copyright &copy; Indigo Bay 2022'
 	));
